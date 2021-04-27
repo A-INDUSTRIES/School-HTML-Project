@@ -2,42 +2,23 @@
 <html>
     <head>
         <title>Project HTML/CSS</title>
-        <style>
-            h1{
-                color:rgb(233, 149, 149);
-                font-family:"Bahnschrift";
-                animation: font-size 1s ease 1s infinite;
-            }
-
-            .text{
-                color: 	rgb(114, 137, 218);
-            }
-
-            .pp{
-                border-radius: 70%;
-                display: block;
-                margin-left: 0px;
-                width: 100px;
-            }
-
-            html{
-                background-color: rgb(35, 39, 42);
-            }
-
-            @keyframes font-size {
-                0% {
-                    transform: scale(1);
-                }
-                50% {
-                    transform: scale(1.2) rotate(-1.5deg);
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <img class="pp" src="pp.png" alt="Profile Picture.">
-        <h1 align=center>DAOUST Alexandre.</h1>
-        <h3 align=center class="text">Etudiant</h3>
-        <h4 align=center class="text">à l'Institut de l'Enfant Jésus Nivelles.</h4>
+        <div class="top-div">
+            <img class="pp" src="pp.png" alt="Profile Picture.">
+            <ul>
+                <li><a class="current-page" href="index.html">Accueil</a></li>
+                <li><a class="li-a" href="cv.html">Cv</a></li>
+                <li><a class="li-a" href="hb.html">Hobbies</a></li>
+                <li><a class="li-a" href="st.html">Etudes</a></li>
+                <li><a class="li-a" href="ex.html">Examen</a></li>
+            </ul>
+        </div>
+        <div style="position: absolute; top: 90px; width: 100%">
+            <h1 align=center>DAOUST Alexandre.</h1>
+            <h3 align=center class="rainbow-text">Etudiant</h3>
+            <h4 align=center class="text">à l'Institut de l'Enfant Jésus Nivelles.</h4>
+        </div>
     </body>
 </html>
