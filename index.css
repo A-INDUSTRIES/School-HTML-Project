@@ -2,7 +2,7 @@ h1{
     color:rgb(233, 149, 149);
     font-family:"Bahnschrift";
     font-size: 100px;
-    animation: h1-anim 1s ease 1s infinite;
+    animation: h1-anim 1s ease infinite;
 }
 
 .text{
@@ -63,13 +63,22 @@ li {
   /* Change the link color to #111 (black) on hover */
 .li-a:hover {
     background-color: #111;
-    }
+}
 
 body{
     background-color: rgb(35, 39, 42);
-    animation: page-anim-in 1.5s ease 0s 1;
     max-width: 100%;
     overflow-x: hidden;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-size: 12.5px;
+    text-align: center;
 }
 
 .rainbow_text_animated {
@@ -110,17 +119,8 @@ body{
     }
 }
 
-@keyframes page-anim-in {
-    0% {
-        filter: blur(10px);
-    }
-    100% {
-        filter: blur(0);
-    }
-}
-
 @keyframes h1-anim {
-    0% {
+    0%, 100% {
         transform: scale(1);
     }
     50% {
