@@ -57,11 +57,11 @@
 body{
     background-color: rgb(35, 39, 42);
     max-width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     left: 0;
     width: 100%;
@@ -98,9 +98,20 @@ body{
     font-size: 24px;
 }
 
+.left-h {
+    text-align: left;
+    font-family: "Dancing Script";
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+}
+
 .right-img {
     float: right;
     margin-left: 20px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: white;
+    border-style: solid;
 }
 
 .right-text {
@@ -108,4 +119,15 @@ body{
     font-family: "Dancing Script";
     color: rgb(255, 255, 255);
     font-size: 24px;
+}
+
+.right-h {
+    text-align: right;
+    font-family: "Dancing Script";
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+}
+
+.link {
+    color: white;
 }
