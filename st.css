@@ -26,7 +26,7 @@
     color: rgb(255, 217, 0);
 }
 
-ul {
+.ul {
     position: absolute;
     list-style-type: none;
     margin: auto;
@@ -37,7 +37,7 @@ ul {
     background-color: #333;
 }
 
-li {
+.li {
     float: left;
 }
 
@@ -68,4 +68,58 @@ body{
     color: white;
     font-size: 12.5px;
     text-align: center;
+}
+
+.left-div {
+    position: absolute;
+    right: 55%;
+    top: 120px;
+    text-align: center;
+}
+
+.right-div {
+    position: absolute;
+    left: 55%;
+    top: 120px;
+    text-align: center;
+}
+
+.tp-div {
+    position: absolute;
+    top: 0;
+    width: 600px;
+    left: 50%;
+    right: 25%;
+    margin-left: -300px;
+    text-align: center;
+}
+
+.btm-div {
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    right: 25%;
+    margin-left: -80px;
+    bottom: 40px;
+    text-align: center;
+    color: rgb(18, 161, 13);
+}
+
+h1 {
+    font-family: "Barlow Condensed";
+    color: white;
+}
+
+h3 {
+    font-family: "Barlow Condensed";
+    color: white;
+}
+
+p {
+    font-family: "Barlow Condensed";
+    color: white;
+}
+
+ul {
+    list-style-type:none;
 }
