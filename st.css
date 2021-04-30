@@ -115,6 +115,15 @@ body{
     padding: 5px;
 }
 
+.link:hover {
+    color: rgb(0, 26, 112);
+    background-color: rgb(135, 190, 31);
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 h1 {
     font-family: "Barlow Condensed";
     color: white;
@@ -129,10 +138,11 @@ h3 {
 
 .p {
     font-family: "Barlow Condensed";
-    color: white;
+    color: yellow;
     position: relative;
     top: -30vh;
     font-size: 2vh;
+    margin-bottom: -20vh
 }
 
 ul {
@@ -142,7 +152,7 @@ ul {
 .img {
     height: 30vh;
     border-radius: 50px;
-    opacity: 50%;
+    opacity: 25%;
 }
 
 .vl {
