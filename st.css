@@ -61,7 +61,7 @@ body{
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     left: 0;
     width: 100%;
@@ -72,16 +72,22 @@ body{
 
 .left-div {
     position: absolute;
-    right: 55%;
+    right: 50%;
     top: 120px;
     text-align: center;
+    border-style: none solid none none;
+    border-color: rgba(255, 255, 0, 0.74);
+    padding-right: 2.5%;
 }
 
 .right-div {
     position: absolute;
-    left: 55%;
+    left: 50%;
     top: 120px;
     text-align: center;
+    border-style: none none none solid;
+    border-color: rgba(255, 255, 0, 0.74);
+    padding-left: 2.5%;
 }
 
 .tp-div {
@@ -95,14 +101,18 @@ body{
 }
 
 .btm-div {
-    position: absolute;
+    position: relative;
     width: 100px;
-    left: 50%;
-    right: 25%;
-    margin-left: -80px;
-    bottom: 40px;
+    left: -57%;
+    right: -25%;
+    top: -80px;
     text-align: center;
-    color: rgb(18, 161, 13);
+    color: rgb(0, 26, 112);
+    background-color: rgb(0, 0, 0);
+    border-color: dimgrey;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 h1 {
@@ -115,11 +125,20 @@ h3 {
     color: white;
 }
 
-p {
+.p {
     font-family: "Barlow Condensed";
     color: white;
+    position: relative;
+    top: -30vh;
+    font-size: 2vh;
 }
 
 ul {
     list-style-type:none;
+}
+
+.img {
+    height: 30vh;
+    border-radius: 50px;
+    opacity: 50%;
 }
