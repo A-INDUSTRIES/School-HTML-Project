@@ -73,40 +73,40 @@ body{
 .left-div {
     position: absolute;
     right: 50%;
-    top: 120px;
+    top: 20vh;
     text-align: center;
-    border-style: none solid none none;
-    border-color: rgba(255, 255, 0, 0.74);
     padding-right: 2.5%;
 }
 
 .right-div {
     position: absolute;
     left: 50%;
-    top: 120px;
+    top: 20vh;
     text-align: center;
-    border-style: none none none solid;
-    border-color: rgba(255, 255, 0, 0.74);
     padding-left: 2.5%;
 }
 
 .tp-div {
     position: absolute;
     top: 0;
-    width: 600px;
+    width: 750px;
     left: 50%;
     right: 25%;
-    margin-left: -300px;
+    margin-left: -375px;
     text-align: center;
 }
 
 .btm-div {
-    position: relative;
-    width: 100px;
-    left: -57%;
-    right: -25%;
-    top: -80px;
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    right: 25%;
+    margin-left: -100px;
+    top: 160vh;
     text-align: center;
+}
+
+.link {
     color: rgb(0, 26, 112);
     background-color: rgb(0, 0, 0);
     border-color: dimgrey;
@@ -118,11 +118,13 @@ body{
 h1 {
     font-family: "Barlow Condensed";
     color: white;
+    font-size: 5vh;
 }
 
 h3 {
     font-family: "Barlow Condensed";
     color: white;
+    font-size: 3vh;
 }
 
 .p {
@@ -141,4 +143,17 @@ ul {
     height: 30vh;
     border-radius: 50px;
     opacity: 50%;
+}
+
+.vl {
+    position: absolute;
+    display: block;
+    top: 20vh;
+    width: 0px;
+    height: 140vh;
+    left: 50%;
+    right: 25%;
+    border-style: solid;
+    border-color: rgba(255, 255, 0, 0.74);
+    border-radius: 5px;
 }
