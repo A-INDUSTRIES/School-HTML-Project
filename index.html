@@ -17,7 +17,7 @@
                 <li><a class="li-a" href="ex.html">Examen</a></li>
             </ul>
         </div>
-        <div style="position: absolute; top: 90px; width: 100%">
+        <div style="position: absolute; top: 90px; width: 100%" id="haha">
             <h1 align=center>DAOUST Alexandre.</h1>
             <h3 align=center class="rainbow_text_animated">Etudiant</h3>
             <h4 align=center class="text">à l'Institut de l'Enfant Jésus Nivelles<br>en option Sciences.</h4>
@@ -27,6 +27,22 @@
         <div class="footer">
             <p>AINDUSTRIES® 2021. All rights reserved. <i>HEHE U FOUND ME :-)</i></p>
         </div>
-        <script>setInterval(function(){location.replace("https://youtu.be/o-YBDTqX_ZU")}, 5000)</script>
+        <script>
+        var played = false;
+        var timer;
+        timer = setTimeout(function audio(){
+            if (!played) {
+                var audio = new Audio("song.mp3");
+                audio.play();
+                played = true;
+                var div = document.getElementById('haha');
+                var p = document.createElement("p");
+                var txt = document.createTextNode("MOUAHAHAHAHA");
+                p.classList.add("lul")
+                p.appendChild(txt);
+                div.appendChild(p);
+            };
+            },2500);
+        </script>
     </body>
 </html>

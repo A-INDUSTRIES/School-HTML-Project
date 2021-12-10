@@ -1,3 +1,12 @@
+.lul{
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+
 h1{
     color:rgb(233, 149, 149);
     font-family:"Bahnschrift";
