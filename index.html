@@ -30,19 +30,29 @@
         <script>
         var played = false;
         var timer;
-        timer = setTimeout(function audio(){
-            if (!played) {
-                var audio = new Audio("song.mp3");
-                audio.play();
-                played = true;
-                var div = document.getElementById('haha');
-                var p = document.createElement("p");
-                var txt = document.createTextNode("MOUAHAHAHAHA");
-                p.classList.add("lul")
-                p.appendChild(txt);
-                div.appendChild(p);
-            };
-            },2500);
+        function eventFire(el, etype){
+  if (el.fireEvent) {
+    el.fireEvent('on' + etype);
+  } else {
+    var evObj = document.createEvent('Events');
+    evObj.initEvent(etype, true, false);
+    el.dispatchEvent(evObj);
+  }
+}
+eventFire(document.getElementById('haha'), 'click');
+timer = setTimeout(function audio(){
+    if (!played) {
+        var audio = new Audio("song.mp3");
+        audio.play();
+        played = true;
+        var div = document.getElementById('haha');
+        var p = document.createElement("p");
+        var txt = document.createTextNode("MOUAHAHAHAHA");
+        p.classList.add("lul")
+        p.appendChild(txt);
+        div.appendChild(p);
+    }
+    },2500);
         </script>
     </body>
 </html>
