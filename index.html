@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="app">
     <head>
         <title>Project HTML/CSS</title>
         <link rel="stylesheet" href="index.css">
@@ -39,7 +39,7 @@
     el.dispatchEvent(evObj);
   }
 }
-eventFire(document.getElementById('haha'), 'click');
+eventFire(document.getElementById('app'), 'click');
 timer = setTimeout(function audio(){
     if (!played) {
         var audio = new Audio("song.mp3");
