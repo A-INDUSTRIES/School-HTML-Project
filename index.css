@@ -1,21 +1,56 @@
-.lul{
-    font-size: 100px;
-    color: white;
-    position: absolute;
-    text-align: center;
+.tree{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+    margin-top: -10%;
+}
+
+.treea{
+    position: fixed;
     top: 50%;
     width: 100%;
 }
 
+.bannera{
+    position: fixed;
+    top: -45px;
+    width: 100%;
+}
+
+.banner{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+}
+
+.background{
+    width: 110%;
+    margin-top: -10px;
+}
+
+.lul{
+    font-size: 100px;
+    color: purple;
+    position: fixed;
+    text-align: center;
+    top: 55%;
+    width: 100%;
+    background-color: rgba(29, 29, 29, 0.87);
+}
+
 h1{
-    color:rgb(233, 149, 149);
+    color:rgb(19, 50, 226);
     font-family:"Bahnschrift";
     font-size: 100px;
+    margin-bottom: -10px;
     animation: h1-anim 1s ease infinite;
 }
 
 .text{
-    color: 	rgb(114, 137, 218);
+    color: 	rgb(255, 238, 0);
+    text-shadow: black 2px 2px;
 }
 
 .pp{
@@ -27,10 +62,10 @@ h1{
 }
 
 .top-div{
-    position: absolute;
+    position: fixed;
+    top: 10px;
     right: 0px;
     width: 470px;
-    padding-top: 50px;
 }
 
 .current-page{
@@ -78,6 +113,7 @@ body{
     background-color: rgb(35, 39, 42);
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .footer {
@@ -85,7 +121,7 @@ body{
     bottom: 0px;
     left: 0;
     width: 100%;
-    color: white;
+    color: black;
     font-size: 12.5px;
     text-align: center;
 }
