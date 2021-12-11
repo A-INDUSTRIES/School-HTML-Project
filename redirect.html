@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REDIRECT</title>
+    </head>
+    <body id="app">
+        <p>Redirecting to "index.html"</p>
+        <script>
+        setTimeout(function message() {
+            var p = document.createElement('a');
+            var text = document.createTextNode("Could not redirect, please click here.");
+            p.appendChild(text);
+            p.href = "https://iejn-projet-html.000webhostapp.com/";
+            document.getElementById("app").appendChild(p)
+        }, 2000)</script>
+    </body>
+</html>
